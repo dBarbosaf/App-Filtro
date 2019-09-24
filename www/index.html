@@ -1,0 +1,52 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+  <script src="components/jquery-3.4.1.min.js"></script>
+    <script src="components/loader.js"></script>
+ <script src="components/acao.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div class="wrapper"></div>
+  <center><h1>Filtros</h1></center>
+  <button class=" btn btn-block btn-success" id="camera"> Camera </button>
+  <div id="imageContainer" class="center">
+    <img id ="img" src="img/" alt="">
+			</div>
+	<div class="sliders">
+				<form id="imageEditor">
+					<p>
+						<label for="gs">Escala de Cinza:</label>
+						<input id="gs" name="gs" type="range" min=0 max=100 value=0 onchange="editar();">
+					</p>			
+				
+					<p>
+						<label for="op">Opacidade</label>
+						<input id="op" name="op" type="range" min=0 max=100 value=100 onchange="editar();">
+					</p>
+
+					<p>
+						<label for="saturate">Saturação</label>
+						<input id="sat" name="saturate" type="range" min=0 max=500 value=100 onchange="editar();">
+					</p>
+
+          <p>
+						<label for="blur">Desfoque</label>
+						<input id="blur" name="blur" type="range" min=0 max=10 value=0 onchange="editar();">
+					</p>
+
+			
+				</form>
+			</div>	
+      </div>
+</body>
+</html>
